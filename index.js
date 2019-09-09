@@ -1,1 +1,1 @@
-// coming soon 
+console.log("coming soon");
