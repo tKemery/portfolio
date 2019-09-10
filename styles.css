@@ -26,7 +26,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    width: 70%;
+    width: 30%;
     
 }
 
@@ -40,31 +40,43 @@ nav {
     width: 50px;
 }
 
+.middle-div {
+    width: 40%;
+}
+
 .right-nav {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width: 30%;
+    justify-content: space-around;
     
-}
-
-.icon {
-    width: 90%;
-}
-
-i {
-    float: right;
-    color: black;
+    width: 30%;
 }
 
 header {
+    display: flex;
+    align-items: center;
     margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 50px;
-    max-width: 300px;
     padding: 15px;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+
 }
+
+.hero-section {
+    width: 50%;
+}
+.hero {
+    min-width: 250px;
+    border-right: 1px solid black;
+}
+
+
+.biography {
+    padding-left: 25px;
+}
+
 
 main {
     margin: auto;
