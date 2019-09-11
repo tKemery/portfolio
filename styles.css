@@ -6,15 +6,19 @@ body {
     margin: 0;
 }
 
-body * {
-    background-color: gray;
-}
-
 nav {
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.border {
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #ed4224, yellow);
 }
 
 .navbar-div-wrapper {
@@ -27,7 +31,6 @@ nav {
     justify-content: space-around;
     align-content: center;
     width: 70%;
-    
 }
 
 .photo-div {
@@ -43,27 +46,68 @@ nav {
 .right-nav {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 30%;
-    
+    border: 1px solid black;
 }
 
-.icon {
-    width: 90%;
+.burger-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-i {
-    float: right;
-    color: black;
+.burger {
+    margin: 0 auto;
+    height: 5px;
+    width: 20px;
+    background-color: #ed4224;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-bottom: 2px;
 }
 
 header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    padding: 15px;
+}
+
+.hero-section {
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
-    max-width: 300px;
-    padding: 15px;
+    background-color: white;
+    width: 80%;
+}
+
+.hero {
+    font-family: 'Maven Pro', sans-serif;
+    line-height: 35px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.gradient {
+    position: relative;
+    right: 15px;
+    background-image: linear-gradient(to right, yellow, #ed4224);
+    height: 1px;
+    width: 100%;
+}
+
+.bio-section {
+    font-family: 'Space Mono', monospace;
+    min-width: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.bio {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main {
@@ -73,7 +117,8 @@ main {
 }
 
 .project-checkout {
-    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
 }
 
 .project-img {
@@ -81,4 +126,12 @@ main {
     max-height: 400px;
 }
 
+
+@media screen and (min-width: 1024px){
+
+}
+
+.hidden {
+    display: none;
+}
 
