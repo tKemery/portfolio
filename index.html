@@ -12,52 +12,63 @@
 
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="navbar-div-wrapper"> 
             <div class="left-nav">
                 <div class="photo-div">
                     <img class="me" 
-                    src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?v=1530129081" 
+                    src="cropped-headshot.jpg" 
                     alt="">
                 </div>
-                <div clsss="name-div">
-                    <p>Thomas Emery<p>
+                <div class="name">
+                    <p>Thomas Emery</p>
                 </div>
             </div> 
-            <div class="hidden middle-nav"></div>
+            <div class="middle-nav">
+                <p>Thomas Emery</p>
+            </div>
             <div class="right-nav">
                 <a class="burger-wrapper">
                     <div class="burger"></div>
                     <div class="burger"></div>
                     <div class="burger"></div>
                 </a>
-                <div class="hidden hot-links">
-                    <a>Contact Me</a>
-                    <a><i class="fa fa-linkedin-square"></i></a>
-                    <a><i class="fa fa-github"></i></a>
+                <div class="hot-links">
+                    <a href="mailto:tkemery7@gmail.com">Contact Me</a>
+                    <a href="https://www.linkedin.com/in/thomas-emery-unc/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://github.com/tKemery" target="_blank"><i class="fa fa-github"></i></a>
                 </div>
             </div>
         </div>
         <div class="border"></div>
     </nav>
+    <nav class="burger-pop">
+        <div class="left">
+            <a href="mailto:tkemery7@gmail.com">Contact Me</a>
+        </div>
+        <div class="center">
+            <a href="https://www.linkedin.com/in/thomas-emery-unc/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+        <div class="right">
+            <a href="https://github.com/tKemery" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+    </nav>
     <header>
         <section class="hero-section">
                 <p class="hero">Hey, I'm Thomas — a Fullstack Web Developer for Hire in Charlotte, NC.</p>
-            <div class="gradient"></div>
         </section>
+        <div class="gradient"></div>
         <section class="bio-section">
-            <p class="bio">I had a degree from a terrific school (s'go Heels!), but 
-                couldn't find work in my field. I decided to do something about it. Now, I love what I do.
-            </p>
+            <p class="bio">I'm just a guy with a Biology degree who taught himself to code. Come check out what
+            I've been working on!</p>
         </section>
     </header>
     <main>
-        <div>
-            <p class="project-checkout">Check out what I've been working on.</p>
-        </div>
-        <section class="project-1">
-            <img class="project-img" src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?v=1530129081" alt="">
-            <p class="project-description">project description</p>
+        <section class="projects" id="project-1">
+            <p class="project-title">So You Think You Know Movies? | The Movie Quiz</p>
+            <img class="project-img" src="movie-quiz-gif.gif" alt="">
+            <p class="project-description">This app is a multiple-choice quiz, but with a twist. Instead of asking
+                the user a question, a movie clip is shown and the user selects the corresponding title from the answer pool.</p>
         </section>
     </main>
     <script src="index.js"></script>
