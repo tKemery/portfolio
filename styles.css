@@ -4,15 +4,17 @@
 
 body {
     margin: 0;
+    background-color: lightgray;
 }
 
 .navbar {
     position: fixed;
+    z-index: 30;
     top: 0px;
     left: 0px;
     width: 100%;
     background-color: black;
-    /* color: white; */
+    font-size: 18px;
 }
 
 a {
@@ -39,38 +41,42 @@ a:hover {
     display: flex;
     justify-content: center;
     align-content: center;
-    /* border: 1px solid white; */
     width: 100%;
 }
 
 .photo-div {
     display: flex;
     justify-content: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .me {
-    height: 50px;
-    width: 50px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
 }
 
 .name {
+    font-family: 'Maven Pro', sans-serif;
     display: none;
     color: orange;
+    margin: auto 0;
 }
 
 .middle-nav {
+    font-family: 'Maven Pro', sans-serif;
     display: flex;
     justify-content: center;
-    /* border: 1px solid white; */
     width: 100%;
     color: orange;
-    
+    margin: auto 0;
 }
 
 .right-nav {
+    font-family: 'Maven Pro', sans-serif;
     display: flex;
     align-items: center;
-    /* border: 1px solid white; */
     width: 100%;
 }
 
@@ -96,12 +102,16 @@ a:hover {
 }
 
 .burger-pop {
+    font-family: 'Maven Pro', sans-serif;
+    position: fixed;
+    z-index: 25;
+    display: flex;
+    top: 71px;
+    left: 0px;
     background-color: black;
     color: orange;
-    display: flex;
     height: 25px;
     width: 100%;
-    margin-top: 50px;
 }
 
 .left {
@@ -128,17 +138,19 @@ a:hover {
 }
 
 header {
+    position: relative;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 75px;
+    padding-bottom: 30px;
 }
 
 .hero-section {
     margin-left: auto;
     margin-right: auto;
     width: 300px;
-    /* border: 1px solid black; */
 }
 
 .hero {
@@ -151,7 +163,7 @@ header {
 
 .gradient {
     background-image: linear-gradient(to right, yellow, #ed4224);
-    height: 1px;
+    height: 2px;
     width: 350px;
     margin-left: auto;
     margin-right: auto;
@@ -159,15 +171,11 @@ header {
 
 .bio-section {
     font-family: 'Maven Pro', sans-serif;
-    /* margin-top: auto;
-    margin-bottom: auto; */
     margin: auto;
     width: 300px;
-    /* border: 1px solid black; */
 }
 
 .bio {
-    /* width: 75%; */
     margin-left: auto;
     margin-right: auto;
     font-size: 22px;
@@ -177,34 +185,60 @@ header {
 
 main {
     margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     background-color: white;
+    border-top: 1px solid black;
 }
 
 .projects {
     font-family: 'Space Mono', monospace;
 }
 
-.project-img {
-    width: 80%;
-}
-
-.project-description {
+.project-stuff {
     text-align: left;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
+.project-img {
+    width: 80%;
+}
+
 .project-title {
     text-align: center;
-    width: 80%;
+    /* width: 80%; */
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
+.project-a, .email {
+    color: orange;
+}
+
+.about-me {
+    font-family: 'Maven Pro', sans-serif;
+    text-align: left;
+    max-width: 80%;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+h2 {
+    text-align: center;
+}
 
 @media screen and (min-width: 1024px){
+    .me:hover {
+        border: 1px solid orange;
+    }
     .burger-wrapper {
         display: none;
     }
@@ -229,11 +263,10 @@ main {
         max-width: 900px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 100px;
         margin-bottom: 125px;
-        /* border: 1px solid black; */
     }
     .hero-section {
-        /* width: 35%; */
         width: 350px;
     }
     .hero {
@@ -257,13 +290,20 @@ main {
     .project-img {
         max-width: 900px;
     }
+    .project-stuff {
+        padding-left: 15px;
+        max-width: 900px;
+    }
     .project-title {
         padding-left: 15px;
         max-width: 900px;
     }
-    .project-description {
+    .about-me {
         padding-left: 15px;
         max-width: 900px;
+    }
+    h2 {
+        text-align: left;
     }
    
 
