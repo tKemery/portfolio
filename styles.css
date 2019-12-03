@@ -184,8 +184,6 @@ header {
 }
 
 main {
-    margin: auto;
-    padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
     background-color: white;
@@ -194,6 +192,16 @@ main {
 
 .projects {
     font-family: 'Space Mono', monospace;
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+.project-title {
+    text-align: center;
+    /* width: 80%; */
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-stuff {
@@ -207,12 +215,8 @@ main {
     width: 80%;
 }
 
-.project-title {
-    text-align: center;
-    /* width: 80%; */
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+.project-skills {
+    padding-bottom: 20px;
 }
 
 .project-a, .email {
@@ -233,6 +237,10 @@ main {
 
 h2 {
     text-align: center;
+}
+
+#project-2 {
+    background-color: lightgray;
 }
 
 @media screen and (min-width: 1024px){
